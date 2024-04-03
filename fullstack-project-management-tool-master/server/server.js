@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 
 
-const app = express()
+const app = express();
 
 dotenv.config()
 
