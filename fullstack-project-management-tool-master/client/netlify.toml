@@ -1,0 +1,3 @@
+[build]
+base = "fullstack-project-management-tool-master/client"
+command = "npm run build"
