@@ -17,11 +17,10 @@ mongoose.connect(process.env.MONGODB_PATH, () => {
 }, (e) => console.log(e))
 
 app.use(cors({
-    origin: ['https://fashionstore1203.netlify.app','http://localhost:3000']
+    origin: ['http://localhost:3000']
   }));
 
 const PORT = process.env.SERVER_PORT || 9000
-
 
 //API Creation
 app.get("/", (req,res)=>{
