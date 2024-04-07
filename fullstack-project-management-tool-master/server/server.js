@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGODB_PATH, () => {
 }, (e) => console.log(e))
 
 app.use(cors({
-    origin: ['http://localhost:3000','https://project-planner1203.netlify.app']
+    origin: ['http://localhost:3000']
   }));
 
 const PORT = process.env.SERVER_PORT || 9000
