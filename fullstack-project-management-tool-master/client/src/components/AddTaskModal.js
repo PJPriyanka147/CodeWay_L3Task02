@@ -62,7 +62,7 @@ const AddTaskModal = ({ isAddTaskModalOpen, setAddTaskModal, projectId = null, t
 
     return (
         <Transition appear show={isAddTaskModalOpen} as={Fragment}>
-            <Dialog as='div' open={isAddTaskModalOpen} onClose={() => setAddTaskModal(false)} className="relative z-50">
+            <Dialog as='div' open={isAddTaskModalOpen} onClose={() => setAddTaskModal(false)} className="relative z-50 bg-gray-700">
                 <div className="fixed inset-0 overflow-y-auto">
                     <Transition.Child
                         as={Fragment}

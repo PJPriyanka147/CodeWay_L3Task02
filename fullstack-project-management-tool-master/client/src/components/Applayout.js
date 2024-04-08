@@ -6,17 +6,17 @@ const AppLayout = ({ children }) => {
     return (
        <>
             <Navbar />
-            <div className=' w-screen flex h-screen'  >
-                <div className="w-[220px]">
+            <div className='w-screen flex '  >
+                <div className="w-64">
                     <Sidebar />
                 </div>
-                <div className="flex-1 ">
-                    <div className="flex ">
+                <div className="flex-1 overflow-y">
+                    <div className="flex flex-col">
                         {children}
                     </div>
                 </div>
             </div>
-            </>
+        </>
        
     )
 }
